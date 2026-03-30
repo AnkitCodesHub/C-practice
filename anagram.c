@@ -3,7 +3,7 @@
 int main()
 {
     char str1[100],str2[100];
-    int i len1=0, len2=0;
+    int i, len1=0, len2=0;
     printf("enter the first string: ");
     fgets(str1,sizeof(str1),stdin);
 
@@ -23,7 +23,7 @@ int main()
 
     if (str1[len1-1]=='\n')
     {
-        str1[len1-1=]'\0';
+        str1[len1-1] = '\0';
         len1--;
     }
     if (str2[len2-1]=='\n')
