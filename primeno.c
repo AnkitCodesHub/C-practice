@@ -13,19 +13,19 @@ int main()
     }
     for (i=2; i<n; i++)
     {
-        if(i%n==0)
+        if(n%i==0)
         {
             prime = 0;
             break;
         }
     }
-    if(prime==0)
+    if(prime==1)
     {
         printf("This is a prime number");
     }
     else
     {
-        printf("this is not a prime number");
+        printf("This is not a prime number");
     }
     return 0;
 }
