@@ -1,5 +1,6 @@
 // check anagram
 #include <stdio.h>
+#include<ctype.h>
 int main()
 {
     char str1[100],str2[100];
@@ -31,6 +32,12 @@ int main()
         str2[len2-1]='\0';
         len2--;
     }
-
-return 0;
+    if (len1!=len2)
+    {
+        printf("These words are not anagram\n");
+        return 0;
+    }
+    int count [256] = {0};
+    int j = 0, int k =0;
+    
 }
