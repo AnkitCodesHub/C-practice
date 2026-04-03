@@ -39,5 +39,10 @@ int main()
     }
     int count [256] = {0};
     int j = 0, int k =0;
-    
+    while(str1[j] != '\0')
+    {
+        if(str1[j] != ' ')
+        count[tolower(str2[k])]--;
+        k++;
+    }
 }
