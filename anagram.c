@@ -1,14 +1,14 @@
 // check anagram
 #include <stdio.h>
-#include<ctype.h>
+#include <ctype.h>
 int main()
 {
     char str1[100],str2[100];
-    int i, len1=0, len2=0;
+    int i;
     printf("enter the first string: ");
     fgets(str1,sizeof(str1),stdin);
 
-    printf("Enter the second string:  ");
+    printf("Enter the second string: ");
     fgets(str2,sizeof(str2),stdin);
 
     // len1 = 0, len2 = 0 ;
@@ -38,11 +38,23 @@ int main()
         return 0;
     }
     int count [256] = {0};
-    int j = 0, int k =0;
+    int j = 0,k =0;
     while(str1[j] != '\0')
     {
         if(str1[j] != ' ')
-        count[tolower(str2[k])]--;
-        k++;
+        {
+            count[tolower(str1[j])]++;
+        }
+        j++;
     }
+    for ( i = 0; i<256; i++)
+    {
+        if (count[i] != 0)
+        {
+            printf("the words are not anagram");
+            return 0;
+        }
+    }
+    printf("These words are anagram\n");
+    return 0;
 }
