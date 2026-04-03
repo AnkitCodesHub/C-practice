@@ -19,7 +19,7 @@ int main()
         if (str1[i] != ' ' && str1[i] != '\n')
         {
             count[tolower(str1[i])]++;
-        }
+        }       
     }
 
     // Process second string

@@ -4,6 +4,7 @@
 int main()
 {
     char str1[100],str2[100];
+    int count[256] = {0};
     int i;
     printf("enter the first string: ");
     fgets(str1,sizeof(str1),stdin);
@@ -12,49 +13,30 @@ int main()
     fgets(str2,sizeof(str2),stdin);
 
     // len1 = 0, len2 = 0 ;
-    while (str1[len1] != '\0' )
+     for (i = 0; str1[i] != '\0'; i++)
     {
-        len1++;
-    }
-
-    while (str2[len2] != '\0' )
-    {
-        len2++;
-    }
-
-    if (str1[len1-1]=='\n')
-    {
-        str1[len1-1] = '\0';
-        len1--;
-    }
-    if (str2[len2-1]=='\n')
-    {
-        str2[len2-1]='\0';
-        len2--;
-    }
-    if (len1!=len2)
-    {
-        printf("These words are not anagram\n");
-        return 0;
-    }
-    int count [256] = {0};
-    int j = 0,k =0;
-    while(str1[j] != '\0')
-    {
-        if(str1[j] != ' ')
+        if (str1[i] != ' ' && str1[i] != '\n')
         {
-            count[tolower(str1[j])]++;
-        }
-        j++;
+            count[tolower(str1[i])]++;
+        }       
     }
-    for ( i = 0; i<256; i++)
+
+     for (i = 0; str2[i] != '\0'; i++)
+    {
+        if (str2[i] != ' ' && str2[i] != '\n')
+        {
+            count[tolower(str2[i])]--;
+        }
+    }
+     for (i = 0; i < 256; i++)
     {
         if (count[i] != 0)
         {
-            printf("the words are not anagram");
+            printf("These words are NOT anagrams\n");
             return 0;
         }
     }
-    printf("These words are anagram\n");
+
+    printf("These words are anagrams\n");
     return 0;
 }
