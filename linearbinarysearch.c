@@ -10,14 +10,14 @@ int linearSearch(int arr[],int size, int element){
     return -1;
 
 }
-int bianrySearch(int arr[], int size, int element){
+int binarySearch(int arr[], int size, int element){
     int low,mid,high;
     low = 0;
     high = size - 1;
     // Start searching
     while(low <= high){
     mid = (low+high)/2;
-    arr([mid] == element);
+    if (arr[mid] == element);
     {
         return mid;
     }
