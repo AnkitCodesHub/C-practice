@@ -1,5 +1,7 @@
 #include<stdio.h>
 void printArray(int* a, int n)
+int temp;
+int isSorted = 0;
 {
     for(int i=0; i<n;i++)
     {
