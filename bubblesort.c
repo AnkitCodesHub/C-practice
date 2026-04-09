@@ -5,14 +5,22 @@ void printArray(int* a, int n)
     {
         printf("%d",a[i]);
     }
+    printf("\n");
 }
-void bubbleSort(int*a,int n)
+void bubbleSort(int* a,int n)
 {
-    for(int i =a; i < n; i++)//for number of passes
+    int temp;
+    for(int i = a; i < n; i++)//for number of passes
     {
         for(int j=0; j<n-1-i; j++)//for comparison in each pass
         {
-            if(a[j])
+            if(a[j]>a[j+1])
+            {
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp; 
+
+            }
         }
     }
 }
