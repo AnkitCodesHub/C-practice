@@ -8,9 +8,12 @@ void printArray(int* a, int n)
 }
 void bubbleSort(int*a,int n)
 {
-    for(int i =a;int < n; i++)//for number of passes
+    for(int i =a; i < n; i++)//for number of passes
     {
-        
+        for(int j=0; j<n-1-i; j++)//for comparison in each pass
+        {
+
+        }
     }
 }
 
