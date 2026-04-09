@@ -12,7 +12,7 @@ void bubbleSort(int* a,int n)
     int temp;
     for(int i = a; i < n; i++)//for number of passes
     {
-        for(int j=0; j<n-1-i; j++)//for comparison in each pass
+        for(int j = 0; j <n-1-i; j++)//for comparison in each pass
         {
             if(a[j]>a[j+1])
             {
