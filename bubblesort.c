@@ -6,7 +6,13 @@ void printArray(int* a, int n)
         printf("%d",a[i]);
     }
 }
-void bubbleSort(a,n)
+void bubbleSort(int*a,int n)
+{
+    for(int i =a;int < n; i++)//for number of passes
+    {
+        
+    }
+}
 
 int main()
 {
