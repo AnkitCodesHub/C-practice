@@ -12,7 +12,7 @@ void bubbleSort(int*a,int n)
     {
         for(int j=0; j<n-1-i; j++)//for comparison in each pass
         {
-
+            if(a[j])
         }
     }
 }
