@@ -28,6 +28,7 @@ int main()
     printArray(A, n);
     seelctioSort(A, n);
     printArray(A, n);
+    
 
     
     return 0;
