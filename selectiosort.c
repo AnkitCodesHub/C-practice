@@ -8,7 +8,7 @@ void printArray(int *A, int n)
     printf("\n");
     
 }
-void selectioSort(int *A, int n)
+void selectionSort(int *A, int n)
 {
     int indexOfMin;
     printf("Running selection sort...\n");
@@ -24,11 +24,11 @@ int main()
     // 3   4  5  6  9 11
     // After first pass 
     int A[] = {3, 4, 5, 6, 9, 11};
-    int n = sizeof(a)/sizeof(a[0]);
+    int n = sizeof(A)/sizeof(A[0]);
     printArray(A, n);
-    seelctioSort(A, n);
+    seelctionSort(A, n);
     printArray(A, n);
-    
+
 
     
     return 0;
