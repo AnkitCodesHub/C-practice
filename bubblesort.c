@@ -1,7 +1,6 @@
 #include<stdio.h>
 void printArray(int* a, int n)
-int temp;
-int isSorted = 0;
+
 {
     for(int i=0; i<n;i++)
     {
@@ -15,7 +14,7 @@ void bubbleSort(int* a,int n)
     for(int i = 0 ; i < n; i++)//for number of passes
     {
         printf("Working on pass number %d\n",i+1); 
-        isSorted =1;
+        int isSorted ;
         for(int j = 0; j <n-1-i; j++)//for comparison in each pass
         {
             if(a[j]>a[j+1])
