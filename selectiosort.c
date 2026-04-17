@@ -10,15 +10,22 @@ void printArray(int *A, int n)
 }
 void selectionSort(int *A, int n)
 {
-    int indexOfMin;
+    int indexOfMin, temp;
     printf("Running selection sort...\n");
     for(int i =0;i<n-1;i++)
     {
        indexOfMin = i;
-       for(int j = i+1; j < count; j++)
+       for(int j = i+1; j < n-1; j++)
        {
-
-       }  
+            if(A[j] < A[indexOfMin])
+            {
+                indexOfMin = j;
+            }
+       }
+        // Swap A[i] and A[index of min] 
+       temp = A[i];
+       A[i] = A[indexOfMin];
+       A[indexOfMin] = temp;
     }
 }
 int main()
@@ -29,6 +36,9 @@ int main()
     // After first pass 
    // 00 01 02 03 04  
     // 2  5  3 13 12
+   // After second pass 
+   // 00 01 02 03 04  
+    // 2  3  5 13 12 
     int A[] = {3, 4, 5, 6, 9, 11};
     int n = sizeof(A)/sizeof(A[0]);
     printArray(A, n);
