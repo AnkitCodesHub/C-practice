@@ -16,7 +16,7 @@ void insertionSort(int *a, int n)
    {
     key  = a[i];
     j = i-1;
-    while (j>=0 && a[j] > key)
+    while (j>=0 && a[j] > key)//for descending less than sign and for ascending order greatert han sign 
     {
         a[j+1] = a[j];
         j--; 
