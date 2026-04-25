@@ -43,6 +43,8 @@ int main()
     int arr[] = {1,2,3,4,5,6,7,8,9,10,44,45,46,47};
     int size = sizeof(arr)/sizeof(int);
     int element = 44;
+    // int searchIndex = linearSearch(arr,size,element);
+    // printf("The element %d is foud at index %d\n",element,searchIndex);
     int searchIndex = binarySearch(arr,size,element);
     printf("The element %d was found at index %d \n",element, searchIndex);
     return 0;
