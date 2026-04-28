@@ -8,7 +8,7 @@ int main()
     {
         for (j=0;j<3;j++)
         {
-            scanf("%d",&a[i][j]);
+            scanf("%d ",&a[i][j]);
         }
         printf("\n");
     }
@@ -17,7 +17,7 @@ int main()
     {
         for (j=0;j<3;j++)
         {
-            scanf("%d",&a[i][j]);
+            printf("%d ",a[i][j]);
         }
         printf("\n");
     }
@@ -26,7 +26,7 @@ int main()
     {
         for (j=0;j<3;j++)
         {
-            scanf("%d",&b[i][j]);
+            scanf("%d ",&b[i][j]);
         }
         printf("\n");
     }
@@ -35,7 +35,7 @@ int main()
     {
         for (j=0;j<3;j++)
         {
-            scanf("%d",&b[i][j]);
+            printf("%d ",b[i][j]);
         }
         printf("\n");
     }
