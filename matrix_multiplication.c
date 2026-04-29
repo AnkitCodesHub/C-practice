@@ -68,7 +68,7 @@ int main()
                 c[i][j] = sum;
             }
         }
-        // print the multiplied thing 
+        // print the multiplied matrix 
         printf("Multiplication is:\n");
         for (i = 0; i<m; i++)
         {
