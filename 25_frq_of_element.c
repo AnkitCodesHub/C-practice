@@ -13,7 +13,8 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if (f[i] == visited) continue;
+        if (f[i] == visited) 
+        continue;
        count = 1;
         for (j=i+1;j<n;j++)
         {    
